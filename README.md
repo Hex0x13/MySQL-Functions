@@ -159,3 +159,69 @@ Designed to handle and enhance text searching within databases.
 | `WEIGHT_STRING()`  | Return the weight string for a string                                                                      | `WEIGHT_STRING(string)`                   |
 
 
+## Date and Time Functions
+
+| Name                    | Description                                                       | How to Call                             |
+|-------------------------|-------------------------------------------------------------------|-----------------------------------------|
+| `ADDDATE()`             | Add time values (intervals) to a date value                      | `ADDDATE(date, interval)`               |
+| `ADDTIME()`             | Add time to a datetime value                                      | `ADDTIME(datetime, time)`               |
+| `CONVERT_TZ()`          | Convert from one time zone to another                             | `CONVERT_TZ(datetime, from_tz, to_tz)`  |
+| `CURDATE()`             | Return the current date                                           | `CURDATE()`                             |
+| `CURRENT_DATE()`        | Synonym for `CURDATE()`                                           | `CURRENT_DATE()`                        |
+| `CURRENT_TIME()`        | Synonym for `CURTIME()`                                           | `CURRENT_TIME()`                        |
+| `CURRENT_TIMESTAMP()`   | Synonym for `NOW()`                                               | `CURRENT_TIMESTAMP()`                   |
+| `CURTIME()`             | Return the current time                                           | `CURTIME()`                             |
+| `DATE()`                | Extract the date part of a date or datetime expression             | `DATE(datetime)`                        |
+| `DATE_ADD()`            | Add time values (intervals) to a date value                       | `DATE_ADD(date, interval)`              |
+| `DATE_FORMAT()`         | Format date as specified                                          | `DATE_FORMAT(date, format)`             |
+| `DATE_SUB()`            | Subtract a time value (interval) from a date                      | `DATE_SUB(date, interval)`              |
+| `DATEDIFF()`            | Subtract two dates                                                | `DATEDIFF(date1, date2)`                |
+| `DAY()`                 | Synonym for `DAYOFMONTH()`                                        | `DAY(date)`                             |
+| `DAYNAME()`             | Return the name of the weekday                                    | `DAYNAME(date)`                         |
+| `DAYOFMONTH()`          | Return the day of the month (0-31)                                | `DAYOFMONTH(date)`                      |
+| `DAYOFWEEK()`           | Return the weekday index of the argument                          | `DAYOFWEEK(date)`                       |
+| `DAYOFYEAR()`           | Return the day of the year (1-366)                                | `DAYOFYEAR(date)`                       |
+| `EXTRACT()`             | Extract part of a date                                            | `EXTRACT(unit FROM date)`               |
+| `FROM_DAYS()`           | Convert a day number to a date                                    | `FROM_DAYS(day_number)`                |
+| `FROM_UNIXTIME()`       | Format Unix timestamp as a date                                   | `FROM_UNIXTIME(timestamp)`             |
+| `GET_FORMAT()`          | Return a date format string                                       | `GET_FORMAT(type, format)`             |
+| `HOUR()`                | Extract the hour                                                   | `HOUR(time)`                            |
+| `LAST_DAY`              | Return the last day of the month for the argument                 | `LAST_DAY(date)`                        |
+| `LOCALTIME()`           | Synonym for `NOW()`                                               | `LOCALTIME()`                           |
+| `LOCALTIMESTAMP()`      | Synonym for `NOW()`                                               | `LOCALTIMESTAMP()`                      |
+| `MAKEDATE()`            | Create a date from the year and day of year                       | `MAKEDATE(year, day_of_year)`           |
+| `MAKETIME()`            | Create time from hour, minute, second                             | `MAKETIME(hour, minute, second)`        |
+| `MICROSECOND()`         | Return the microseconds from argument                             | `MICROSECOND(datetime)`                 |
+| `MINUTE()`              | Return the minute from the argument                               | `MINUTE(time)`                          |
+| `MONTH()`               | Return the month from the date passed                             | `MONTH(date)`                           |
+| `MONTHNAME()`           | Return the name of the month                                      | `MONTHNAME(date)`                       |
+| `NOW()`                 | Return the current date and time                                  | `NOW()`                                 |
+| `PERIOD_ADD()`          | Add a period to a year-month                                      | `PERIOD_ADD(period, number)`            |
+| `PERIOD_DIFF()`         | Return the number of months between periods                      | `PERIOD_DIFF(period1, period2)`         |
+| `QUARTER()`             | Return the quarter from a date argument                           | `QUARTER(date)`                         |
+| `SEC_TO_TIME()`         | Converts seconds to 'hh:mm:ss' format                             | `SEC_TO_TIME(seconds)`                  |
+| `SECOND()`              | Return the second (0-59)                                          | `SECOND(time)`                          |
+| `STR_TO_DATE()`         | Convert a string to a date                                        | `STR_TO_DATE(string, format)`           |
+| `SUBDATE()`             | Synonym for `DATE_SUB()` when invoked with three arguments        | `SUBDATE(date, interval)`               |
+| `SUBTIME()`             | Subtract times                                                    | `SUBTIME(time, interval)`               |
+| `SYSDATE()`             | Return the time at which the function executes                    | `SYSDATE()`                             |
+| `TIME()`                | Extract the time portion of the expression passed                 | `TIME(datetime)`                        |
+| `TIME_FORMAT()`         | Format as time                                                     | `TIME_FORMAT(time, format)`             |
+| `TIME_TO_SEC()`         | Return the argument converted to seconds                          | `TIME_TO_SEC(time)`                     |
+| `TIMEDIFF()`            | Subtract time                                                      | `TIMEDIFF(time1, time2)`                |
+| `TIMESTAMP()`           | With a single argument, this function returns the date or datetime expression; with two arguments, the sum of the arguments | `TIMESTAMP(datetime)` or `TIMESTAMP(date, time)` |
+| `TIMESTAMPADD()`        | Add an interval to a datetime expression                          | `TIMESTAMPADD(unit, interval, datetime)` |
+| `TIMESTAMPDIFF()`       | Return the difference of two datetime expressions, using the units specified | `TIMESTAMPDIFF(unit, datetime1, datetime2)` |
+| `TO_DAYS()`             | Return the date argument converted to days                        | `TO_DAYS(date)`                         |
+| `TO_SECONDS()`          | Return the date or datetime argument converted to seconds since Year 0 | `TO_SECONDS(date)`                      |
+| `UNIX_TIMESTAMP()`      | Return a Unix timestamp                                           | `UNIX_TIMESTAMP(datetime)`              |
+| `UTC_DATE()`            | Return the current UTC date                                       | `UTC_DATE()`                            |
+| `UTC_TIME()`            | Return the current UTC time                                       | `UTC_TIME()`                            |
+| `UTC_TIMESTAMP()`       | Return the current UTC date and time                              | `UTC_TIMESTAMP()`                       |
+| `WEEK()`                | Return the week number                                            | `WEEK(date, [mode])`                    |
+| `WEEKDAY()`             | Return the weekday index                                          | `WEEKDAY(date)`                         |
+| `WEEKOFYEAR()`          | Return the calendar week of the date (1-53)                       | `WEEKOFYEAR(date)`                      |
+| `YEAR()`                | Return the year                                                   | `YEAR(date)`                            |
+| `YEARWEEK()`            | Return the year and week                                          | `YEARWEEK(date, [mode])`                |
+
+
