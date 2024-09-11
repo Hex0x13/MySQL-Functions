@@ -225,3 +225,47 @@ Designed to handle and enhance text searching within databases.
 | `YEARWEEK()`            | Return the year and week                                          | `YEARWEEK(date, [mode])`                |
 
 
+
+## Control Flow Functions
+
+| Name   | Description                                   | How to Call                                      |
+|--------|-----------------------------------------------|--------------------------------------------------|
+| `CASE` | Case operator                                | `CASE expression WHEN value1 THEN result1 [WHEN value2 THEN result2 ...] [ELSE default] END` |
+| `IF()` | If/else construct                            | `IF(condition, true_value, false_value)`         |
+| `IFNULL()` | Null if/else construct                    | `IFNULL(expression, replacement)`                |
+| `NULLIF()` | Return NULL if `expr1` = `expr2`           | `NULLIF(expression1, expression2)`               |
+
+
+
+
+## References
+
+### Numeric Functions
+- [MySQL Numeric Functions Documentation](https://dev.mysql.com/doc/refman/8.4/en/numeric-functions.html)
+
+### String Functions
+- [MySQL String Functions Documentation](https://dev.mysql.com/doc/refman/8.4/en/string-functions.html)
+
+### Date Functions in MySQL
+- [MySQL Date and Time Functions Documentation](https://dev.mysql.com/doc/refman/8.4/en/date-and-time-functions.html)
+
+### Calculating Dates and Times
+- [MySQL Date Calculations Documentation](https://dev.mysql.com/doc/refman/8.4/en/date-calculations.html)
+- [LearnSQL: Calculate Difference Between Two Timestamps](https://learnsql.com/cookbook/how-to-calculate-the-difference-between-two-timestamps-in-mysql/#:~:text=To%20calculate%20the%20difference%20between%20the%20timestamps%20in%20MySQL%2C%20use,have%20done%20here%2C%20choose%20SECOND%20.)
+
+### IFNULL
+- [W3Schools: MySQL IFNULL Function](https://www.w3schools.com/mysql/func_mysql_ifnull.asp)
+
+### COALESCE
+- [W3Schools: MySQL COALESCE Function](https://www.w3schools.com/sql/func_mysql_coalesce.asp)
+
+### IFNULL vs COALESCE
+- [W3Schools: MySQL IFNULL](https://www.w3schools.com/mysql/mysql_ifnull.asp)
+- [Tech.Tunecore: COALESCE and IFNULL](http://tech.tunecore.com/coalesce-and-ifnull#:~:text=COALESCE%20AND%20IFNULL%20LOOK%20AWFULLY%20SIMILAR&text=COALESCE%20can%20take%20several%20arguments,%3D%3D%20NULL%E2%80%9D)%20returns%20false.)
+
+### The IF Function
+- [MySQL IF Function Documentation](https://dev.mysql.com/doc/refman/8.4/en/if.html)
+
+### The CASE Operator
+- [MySQL CASE Operator Documentation](https://dev.mysql.com/doc/refman/8.4/en/case.html)
+
