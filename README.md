@@ -94,6 +94,30 @@ Designed to handle and enhance text searching within databases.
 | `TRUNCATE()`| Truncates a number to a specified number of decimal places without rounding. | `TRUNCATE(a, n)`    |
 
 
+## Aggregate Functions
+| Name            | Description                                              |
+|-----------------|----------------------------------------------------------|
+| AVG()           | Return the average value of the argument                |
+| BIT_AND()       | Return bitwise AND                                       |
+| BIT_OR()        | Return bitwise OR                                        |
+| BIT_XOR()       | Return bitwise XOR                                       |
+| COUNT()         | Return a count of the number of rows returned            |
+| COUNT(DISTINCT) | Return the count of a number of different values         |
+| GROUP_CONCAT()  | Return a concatenated string                             |
+| JSON_ARRAYAGG() | Return result set as a single JSON array                 |
+| JSON_OBJECTAGG()| Return result set as a single JSON object                |
+| MAX()           | Return the maximum value                                 |
+| MIN()           | Return the minimum value                                 |
+| STD()           | Return the population standard deviation                |
+| STDDEV()        | Return the population standard deviation                |
+| STDDEV_POP()    | Return the population standard deviation                |
+| STDDEV_SAMP()   | Return the sample standard deviation                    |
+| SUM()           | Return the sum                                           |
+| VAR_POP()       | Return the population standard variance                 |
+| VAR_SAMP()      | Return the sample variance                              |
+| VARIANCE()      | Return the population standard variance                 |
+
+
 ## String Functions
 
 | Name               | Description                                                                                               | How to Call                                |
